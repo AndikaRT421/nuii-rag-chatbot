@@ -1,0 +1,2625 @@
+{
+  "Konten": [
+    {
+      "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG PENUMPU (LINE POLE) DENGAN LIGHTNING ARRESTER TM-1A",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tumpu)",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "2",
+          "nama": "Arm Tie Type 750 Pipe Ø 3/4\"",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "3",
+          "nama": "Bolt & Nut M16x400 + Washer (Double Arm)",
+          "satuan": "Set",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "4",
+          "nama": "Bolt & Nut M16x50 + Washer",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "5",
+          "nama": "20 KV Pin Post Insulator",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "6",
+          "nama": "Semi Cond. Top Tie",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "7",
+          "nama": "-",
+          "satuan": "-",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "8",
+          "nama": "Preformed Top Tie 240/150/70/35",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "9",
+          "nama": "Ground Wire Clamp type A + Bolt, Wire Clip",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "10",
+          "nama": "Lightning Arrester 10 A - 24 kV",
+          "satuan": "Set",
+          "kuantitas": "1"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG SUDUT KECIL (0° S/D 15°) TM-1 + Supp.",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tumpu)",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "2",
+          "nama": "Arm Tie Type 750 Pipe Ø 3/4\"",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "3",
+          "nama": "Bolt & Nut M16x400 + Washer (Double Arm)",
+          "satuan": "Set",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "4",
+          "nama": "Bolt & Nut M16x50 + Washer",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "5",
+          "nama": "20 KV Pin Post Insulator",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "6",
+          "nama": "Semi Conductif Preformed Top Tie",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "7",
+          "nama": "-",
+          "satuan": "Mtr",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "8",
+          "nama": "-",
+          "satuan": "-",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "9",
+          "nama": "Ground Wire Clamp type A + Bolt, Wire Clip",
+          "satuan": "Set",
+          "kuantitas": "1"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG SUDUT SEDANG (15° S/D 30°) - MENGGUNAKAN PIN POST INSULATOR TM-2",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tumpu)",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "2",
+          "nama": "Arm Tie Type 750 Pipe Ø 3/4\"",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "3",
+          "nama": "Bolt & Nut M16x400 + Washer (Double Arm)",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "4",
+          "nama": "20 KV Pin (Pin Post) Insulator + Steel Pin",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "5",
+          "nama": "Semi Conductif Preformed Side Tie Double",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "6",
+          "nama": "-",
+          "satuan": "Mtr",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "7",
+          "nama": "-",
+          "satuan": "-",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "8",
+          "nama": "Ground Wire Clamp type B + bolt, Preformed, cousen",
+          "satuan": "Set",
+          "kuantitas": "1"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI TIANG SUDUT SEDANG (15° S/D 30°) - MENGGUNAKAN STRAIN ROD INSULATOR TM-5 1 Supp.",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "20 KV Pin Post Insulator",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "2",
+          "nama": "Long Rod Insulator 20 KV",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "3",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tarik)",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "4",
+          "nama": "Arm Tie Type 750 (Pipe 3/4\")",
+          "satuan": "Set",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "5",
+          "nama": "Bolt & Nuts M16 x 140 + Washer",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "6",
+          "nama": "Susp.VEE/Cross Arm Clevis / Band Strap",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "7",
+          "nama": "Non Tension Joint",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "8",
+          "nama": "Dead End Clamp/Preformed Term + Thimble",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "9",
+          "nama": "Bolt & Nut M16x400 + Washer (Double Arm)",
+          "satuan": "Set",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "10",
+          "nama": "U Strap",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "11",
+          "nama": "-",
+          "satuan": "-",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "12",
+          "nama": "-",
+          "satuan": "-",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "13",
+          "nama": "Semi Cond. Preformed Top Tie",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "14",
+          "nama": "Ground Wire Clamp type B + bolt, Preformed, cousen",
+          "satuan": "Set",
+          "kuantitas": "1"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG SUDUT BESAR (60° S/D 90°) TM-10",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "20 KV Pin Post Insulator",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "2",
+          "nama": "Long Rod Insulator 20 KV",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "3",
+          "nama": "Bolt & Nut M16x400 + Washer (Double Arm)",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "4",
+          "nama": "Arm Tie Type 750 Pipe Ø 3/4\"",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "5",
+          "nama": "Arm Tie Band, Nut M16 + Washer",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "6",
+          "nama": "U Strap",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "7",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tarik)",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "8",
+          "nama": "Line Tap Connector/HH Connector",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "9",
+          "nama": "Band Strap/Cross Arm Clevis / Susp. VEE",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "10",
+          "nama": "Bolt & Nut M16x140+ Washer",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "11",
+          "nama": "Double Arm Band + Bolt & Nuts + Washer",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "12",
+          "nama": "Dead end/Strain Clamp/Preformed Termination",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "13",
+          "nama": "Semi Conductif Preformed Side Tie",
+          "satuan": "Set",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "14",
+          "nama": "-",
+          "satuan": "-",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "15",
+          "nama": "-",
+          "satuan": "-",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "16",
+          "nama": "Ground Wire Clamp type C + bolt, Preformed, cousen",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "17",
+          "nama": "-",
+          "satuan": "-",
+          "kuantitas": "-"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG SUDUT BESAR (60° S/D 90°) DENGAN CUT OUT SWITCH TM-10C",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tarik)",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "2",
+          "nama": "Double Arm Bolt & Nut M16x400+Washer",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "3",
+          "nama": "Double Arm Band + Nut & Washer",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "4",
+          "nama": "Arm Tie Type 750 Pipe. 3/4\"",
+          "satuan": "Set",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "5",
+          "nama": "Arm Tie Band Bolt + Nut M16 & Washer",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "6",
+          "nama": "Bolt & Nut M16x140+ Washer",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "7",
+          "nama": "Long Rod Insulator 20 KV",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "8",
+          "nama": "Strain Clamp",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "9",
+          "nama": "Terminal Lug 150-Cu/Al",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "10",
+          "nama": "Cross Arm Clevis",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "11",
+          "nama": "U Strap",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "12",
+          "nama": "Cut Out Switch 22kV/100A+Fuse 8A+Bracket",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "13",
+          "nama": "20 KV Pin Post Insulator",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "14",
+          "nama": "Semi Cond. Preformed Side Tie",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "15",
+          "nama": "-",
+          "satuan": "-",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "16",
+          "nama": "Preformet Top Tie 240/150/70/35",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "17",
+          "nama": "Line Tap Connector",
+          "satuan": "Pcs",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "18",
+          "nama": "Ground Wire Clamp type C + bolt, Preformed, cousen",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "19",
+          "nama": "Wire Clip M.6",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG PERCABANGAN (TEE-OFF POLE) TM-8",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "20 KV Pin Post Insulator",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "2",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tumpu)",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "3",
+          "nama": "Bolt & Nut M16x400 + Washer (Double Arm)",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "4",
+          "nama": "Arm Tie Type 750 Pipe Ø 3/4\"",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "5",
+          "nama": "Arm Tie Band, Nut, Washer",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "6",
+          "nama": "U Strap",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "7",
+          "nama": "Long Rod Insulator 20 KV",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "8",
+          "nama": "Line Tap Connector",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "9",
+          "nama": "Band Strap/Cross Arm Clevis / Susp. VEE.",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "10",
+          "nama": "Bolt & Nut M140 + Washer",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "11",
+          "nama": "Double Arm Band + Bolt & Nuts + Washer",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "12",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tarik)",
+          "satuan": "Set",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "13",
+          "nama": "Dead end/Strain Clamp/PreformedTermination",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "14",
+          "nama": "Semi Cond. Preformed Side Tie",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "15",
+          "nama": "Semi Cond. Preformed Top Tie",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "16",
+          "nama": "Preformet Top Tie 240/150/70/35 Sqmm",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "17",
+          "nama": "Ground Wire Clamp type C + bolt, Preformed, cousen",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "18",
+          "nama": "Wire Clip M.6",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI TIANG PENCABANGAN (TEE - OFF POLE) SUDUT SEDANG TM-8A",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "20 KV Pin Post Insulator",
+          "satuan": "Pcs",
+          "kuantitas": "7"
+        },
+        {
+          "nomor": "2",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tumpu)",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "3",
+          "nama": "Bolt & Nut M16x400 + Washer (Double Arm)",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "4",
+          "nama": "Arm Tie Type 750 Pipe Ø 3/4\"",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "5",
+          "nama": "Arm Tie Band, Nut, Washer",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "6",
+          "nama": "U Strap",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "7",
+          "nama": "Long Rod Insulator 20 KV",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "8",
+          "nama": "Line Tap Connector",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "9",
+          "nama": "Band Strap/Cross Arm Clevis / Susp. VEE.",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "10",
+          "nama": "Bolt & Nut M140 + Washer",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "11",
+          "nama": "Double Arm Band + Bolt & Nuts + Washer",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "12",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tarik)",
+          "satuan": "Set",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "13",
+          "nama": "Dead end/Strain Clamp/Preformed Termination",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "14",
+          "nama": "Semi Cond. Preformed Side Tie",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "15",
+          "nama": "Semi Cond. Preformed Side Tie Double",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "16",
+          "nama": "Preformet Top Tie 240/150/70/35 Sqmm",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "17",
+          "nama": "Ground Wire Clamp type C + bolt, Preformed, cousen",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "18",
+          "nama": "Wire Clip M.6",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG AKHIR (END POLE) TM-4",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "Strain Rod Insulator 20 KV",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "2",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tarik)",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "3",
+          "nama": "Arm Tie Type 750 Pipe Ø 3/4\"",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "4",
+          "nama": "Bolt & Nut M16x400 + Washer (Double Arm)",
+          "satuan": "Set",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "5",
+          "nama": "U Strap",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "6",
+          "nama": "Cross Arm Clevis",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "7",
+          "nama": "Bolt & Nut M16x120 + Washer",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "8",
+          "nama": "Dead End Clamp (Strain Clamp)",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "9",
+          "nama": "Ground Wire Clamp type B + bolt, Preformed, cousen",
+          "satuan": "Set",
+          "kuantitas": "1"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG AKHIR (END POLE) MENGGUNAKAN LIGHTNING ARRESTER (LA) TM-4A",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "Long Rod Insulator 20 KV",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "2",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tarik)",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "3",
+          "nama": "Arm Tie Type 750 Pipe Ø 3/4\"",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "4",
+          "nama": "Bolt & Nut M16x400 + Washer (Double Arm)",
+          "satuan": "Set",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "5",
+          "nama": "U Strap",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "6",
+          "nama": "Cross Arm Clevis",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "7",
+          "nama": "Bolt & Nut M16x120 + Washer",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "8",
+          "nama": "Dead End Clamp (Strain Clamp)",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "9",
+          "nama": "Ground Wire Clamp type B + bolt, Preformed, cousen",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "10",
+          "nama": "Lightning Arrester",
+          "satuan": "Set",
+          "kuantitas": "3"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG AWAL (RISER POLE) EXSISTING LURUS TM-4X",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "Dead End Clamp (Strain Clamp)",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "2",
+          "nama": "Cross Arm Clevis/Susp.VEE/Band Strap",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "3",
+          "nama": "20 KV Pin Post Insulator",
+          "satuan": "Pcs",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "4",
+          "nama": "Bolt & Nut M16x140",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "5",
+          "nama": "Line Tap Connector",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "6",
+          "nama": "Semi Cond. Preformed Side Tie",
+          "satuan": "Pcs",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "7",
+          "nama": "Semi Cond. Preformed Side Tie Double",
+          "satuan": "Pcs",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "8",
+          "nama": "Preformet Top Tie 240/150/70/35",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "9",
+          "nama": "Long Rod Insulator 20 KV",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "10",
+          "nama": "Wire Clip",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "11",
+          "nama": "Preformed, cousen",
+          "satuan": "Set",
+          "kuantitas": "1"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG PENEGANG (TENSION POLE) TM-5",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "20 KV Pin Post Insulator",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "2",
+          "nama": "Long Rod Insulator 20 KV",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "3",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tarik)",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "4",
+          "nama": "Arm Tie Type 750 (Pipe 3/4\")",
+          "satuan": "Set",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "5",
+          "nama": "Bolt & Nuts M16 x 140 + Washer",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "6",
+          "nama": "Susp. VEE/Cross Arm Clevis / Band Strap",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "7",
+          "nama": "Non Tension Joint",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "8",
+          "nama": "Dead End Clamp/Preformed Term + Thimble",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "9",
+          "nama": "Bolt & Nut M16x400 + Washer (Double Arm)",
+          "satuan": "Set",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "10",
+          "nama": "U Strap",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "11",
+          "nama": "Semi Cond. Preformed Side Tie",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "12",
+          "nama": "Semi Cond. Preformed Side Tie Double",
+          "satuan": "Pcs",
+          "kuantitas": "0"
+        },
+        {
+          "nomor": "13",
+          "nama": "Preformed Top Tie 240/150/70/35",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "14",
+          "nama": "Ground Wire Clamp type B + bolt, Preformed, cousen",
+          "satuan": "Set",
+          "kuantitas": "1"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG PENEGANG (TENSION POLE) DENGAN LIGHTNING ARRESTER TM-5A",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "20 KV Pin Post Insulator",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "2",
+          "nama": "Long Rod Insulator 20 KV",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "3",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tarik)",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "4",
+          "nama": "Arm Tie Type 750 (Pipe 3/4\")",
+          "satuan": "Set",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "5",
+          "nama": "Bolt & Nuts M16 x 140 + Washer",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "6",
+          "nama": "Susp.VEE/Cross Arm Clevis / Band Strap",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "7",
+          "nama": "Line Tap Connector",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "8",
+          "nama": "Dead End Clamp/Preformed Term + Thimble",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "9",
+          "nama": "Bolt & Nut M16x400+ Washer (Double Arm)",
+          "satuan": "Set",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "10",
+          "nama": "U Strap",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "11",
+          "nama": "Semi Cond. Side Tie",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "12",
+          "nama": "-",
+          "satuan": "-",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "13",
+          "nama": "Preformed Top Tie 240/150/70/35",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "14",
+          "nama": "Ground Wire Clamp type B + bolt, Preformed, cousen",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "15",
+          "nama": "Lightning Arrester 10 KA- 24 kV",
+          "satuan": "Set",
+          "kuantitas": "1"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI TIANG PENEGANG (TENSION POLE) DENGAN CUT OUT SWITCH TM-5C",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tarik)",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "2",
+          "nama": "Double Bolt & Nut M16x400 + Washer",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "3",
+          "nama": "Arm Tie Type 750 Pipe Ø 3/4\"",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "4",
+          "nama": "Arm Tie Band & Nut M16x50 + Washer",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "5",
+          "nama": "Strain Clamp/Preformed Termination+Thimble",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "6",
+          "nama": "Cut Out Switch 22kV + Fuse Link 100A",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "7",
+          "nama": "Cross Arm Clevis / Susp.VEE/Band Strap",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "8",
+          "nama": "Bolt & Nut M16x140+ Washer",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "9",
+          "nama": "U Strap",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "10",
+          "nama": "Long Rod Insulator 20 KV",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "11",
+          "nama": "Double Arm Band + Bolt & Nut + Washer",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "12",
+          "nama": "Wire Clip M.8",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "13",
+          "nama": "Ground Wire Clamp type B + bolt, Preformed, cousen",
+          "satuan": "Set",
+          "kuantitas": "1"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG PENEGANG (TENSION POLE) JARAK MAKS. 175 MS TMTP2",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "Cross Arm NP-10 tebal min 5,0 3000 (type tarik)",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "2",
+          "nama": "Arm Tie Type 900 Pipe Ø 3/4\"",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "3",
+          "nama": "20 KV Pin Post Insulator",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "4",
+          "nama": "Long Rod Insulator 20 KV",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "5",
+          "nama": "Double Arm Bolt & Nut M16x400+Washer",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "6",
+          "nama": "Bolt & Nut M16x140 + Washer",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "7",
+          "nama": "HV Band Strap/Susp.VEE/Cross Arm Clavis",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "8",
+          "nama": "Line Tap Connector",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "9",
+          "nama": "HV Dead End Clamp/Preformed Termination",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "10",
+          "nama": "Single Arm Band + Nut & Washer",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "11",
+          "nama": "Arm Tie Band + Nut M16 & Washer",
+          "satuan": "Set",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "12",
+          "nama": "Semi Cond. Preformed Side Tie",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "13",
+          "nama": "-",
+          "satuan": "-",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "14",
+          "nama": "Preformet Top Tie 240/150/70/35",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "15",
+          "nama": "Cross Arm NP-8-2500 tebal 3,2",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "16",
+          "nama": "-",
+          "satuan": "-",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "17",
+          "nama": "Ground Wire Clamp type B + bolt, Preformed, cousen",
+          "satuan": "Set",
+          "kuantitas": "1"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG PENEGANG (TENSION POLE) JARAK MAKS. 175 MS SUDUT TMTP2A",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "Cross Arm NP-10 tebal min 5,0 3000 (type tarik)",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "2",
+          "nama": "Arm Tie Type 900 Pipe Ø 3/4\"",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "3",
+          "nama": "Arm Tie Type 750 Pipe Ø 3/4\"",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "4",
+          "nama": "20 KV Pin Post Insulator",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "5",
+          "nama": "Long Rod Insulator 20 KV",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "6",
+          "nama": "Double Arm Bolt & Nut M16x400+Washer",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "7",
+          "nama": "Bolt & Nut M16x140 + Washer",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "8",
+          "nama": "HV Band Strap/Susp.VEE/Cross Arm Clavis",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "9",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tarik)",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "10",
+          "nama": "HV Dead End Clamp/Preformed Termination",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "11",
+          "nama": "Single Arm Band + Nut & Washer",
+          "satuan": "Set",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "12",
+          "nama": "Arm Tie Band + Nut & Washer",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "13",
+          "nama": "Semi Cond. Side Tie",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "14",
+          "nama": "-",
+          "satuan": "-",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "15",
+          "nama": "Preformet Top Tie 150/70/35",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "16",
+          "nama": "Line Tap Connector 240/150/70/35",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "17",
+          "nama": "Preformet Top Tie 150/70/35",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "18",
+          "nama": "Cross Arm NP-8-2500 tebal 3,2",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "19",
+          "nama": "Ground Wire Clamp type B + bolt, Preformed, cousen",
+          "satuan": "Set",
+          "kuantitas": "2"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG PENEGANG (TENSION POLE) JARAK MAKS. 275 MS TMTP3",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "Cross Arm NP-10 tebal min 5,0 6000 (type tarik)",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "2",
+          "nama": "Arm Tie Type 900 Pipe Ø 3/4\"",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "3",
+          "nama": "20 KV Pin Post Insulator",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "4",
+          "nama": "Long Rod Insulator 20 KV",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "5",
+          "nama": "Double Arm Bolt & Nut M16x400+Washer",
+          "satuan": "Pcs",
+          "kuantitas": "9"
+        },
+        {
+          "nomor": "6",
+          "nama": "Bolt & Nut M16x140 + Washer",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "7",
+          "nama": "HV Band Strap/Susp.VEE/Cross Arm Clavis",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "8",
+          "nama": "Line Tap Connector",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "9",
+          "nama": "HV Dead End Clamp/Preformed Termination",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "10",
+          "nama": "Single Arm Band + Nut & Washer",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "11",
+          "nama": "Arm Tie Band + Nut M16 & Washer",
+          "satuan": "Set",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "12",
+          "nama": "Alluminium Binding Wire 3,2 mm",
+          "satuan": "Mtr",
+          "kuantitas": "X"
+        },
+        {
+          "nomor": "13",
+          "nama": "Alluminium Tape 4,0 mm",
+          "satuan": "Mtr",
+          "kuantitas": "Y"
+        },
+        {
+          "nomor": "14",
+          "nama": "Semi Cond Preformet Side Tie",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "15",
+          "nama": "Cross Arm NP-8-6000 tebal 3,2",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "16",
+          "nama": "-",
+          "satuan": "-",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "17",
+          "nama": "Ground Wire Clamp type B + bolt, Preformed, cousen",
+          "satuan": "Set",
+          "kuantitas": "1"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG PENEGANG (TENSION POLE) JARAK MAKS. 275 MS SUDUT TMTP3A",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "Cross Arm NP-10 tebal min 5,0 6000 (type tarik)",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "2",
+          "nama": "Arm Tie Type 900 Pipe Ø 3/4\"",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "3",
+          "nama": "Arm Tie Type 750 Pipe Ø 3/4\"",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "4",
+          "nama": "20 KV Pin Post Insulator",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "5",
+          "nama": "Long Rod Insulator 20 KV",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "6",
+          "nama": "Double Arm Bolt & Nut M16x400+Washer",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "7",
+          "nama": "Bolt & Nut M16x140 + Washer",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "8",
+          "nama": "HV Band Strap/Susp.VEE/Cross Arm Clavis",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "9",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tarik)",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "10",
+          "nama": "HV Dead End Clamp/Preformed Termination",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "11",
+          "nama": "Single Arm Band + Nut & Washer",
+          "satuan": "Set",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "12",
+          "nama": "Arm Tie Band + Nut & Washer",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "13",
+          "nama": "Semi Cond. Preformed Side Tie",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "14",
+          "nama": "-",
+          "satuan": "-",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "15",
+          "nama": "Preformet Top Tie 150/70/35",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "16",
+          "nama": "Line Tap Connector 240/150/70/35",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "17",
+          "nama": "Preformet Top Tie 150/70/35",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "18",
+          "nama": "Cross Arm NP-8-2500 tebal 3,2",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "19",
+          "nama": "Ground Wire Clamp type B + bolt, Preformed, cousen",
+          "satuan": "Set",
+          "kuantitas": "2"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG SUDUT BESAR (60° S/D 90°) TANPA PERLUASAN TM-9",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "20 KV Pin Post Insulator",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "2",
+          "nama": "Long Rod Insulator 20 KV",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "3",
+          "nama": "Bolt & Nut M16x400 + Washer (Double Arm)",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "4",
+          "nama": "Arm Tie Type 750 Pipe Ø 3/4\"",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "5",
+          "nama": "Arm Tie Band, Nut M16 + Washer",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "6",
+          "nama": "U Strap",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "7",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tarik)",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "8",
+          "nama": "Line Tap Connector/ HH Connector",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "9",
+          "nama": "Band Strap/Cross Arm Clevis / Susp. VEE",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "10",
+          "nama": "Bolt & Nut M16x140 + Washer",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "11",
+          "nama": "Single Arm Band + Bolt & Nuts + Washer",
+          "satuan": "Set",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "12",
+          "nama": "Dead end/Strain Clamp/Preformed Termination",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "13",
+          "nama": "Semi Cond. Preformed Side Tie",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "14",
+          "nama": "-",
+          "satuan": "-",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "15",
+          "nama": "Preformet Top Tie 150/70/35 Sqmm",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "16",
+          "nama": "Ground Wire Clamp type C + bolt, Preformed, cousen",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "17",
+          "nama": "Wire Clip M.6",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG AKHIR (END POLE) - (TANPA PERLUASAN) TM-3",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "Long Rod Insulator 20 KV",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "2",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tarik)",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "3",
+          "nama": "Arm Tie Type 750 Pipe Ø 3/4\"",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "4",
+          "nama": "Bolt & Nut M16x400 + Washer (Double Arm)",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "5",
+          "nama": "U Strap",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "6",
+          "nama": "Cross Arm Clevis",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "7",
+          "nama": "Bolt & Nut M16x120 + Washer",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "8",
+          "nama": "Dead End Clamp (Strain Clamp)",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "9",
+          "nama": "Ground Wire Clamp type B + bolt, Preformed, cousen",
+          "satuan": "Set",
+          "kuantitas": "1"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG PENEGANG (TENSION POLE) TANPA PERLUASAN TM-6",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "20 KV Pin Post Insulator",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "2",
+          "nama": "Long Rod Insulator 20 KV",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "3",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tarik)",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "4",
+          "nama": "Arm Tie Type 750 (Pipe 3/4\")",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "5",
+          "nama": "Bolt & Nuts M16 x 140 + Washer",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "6",
+          "nama": "Susp.VEE/Cross Arm Clevis / Band Strap",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "7",
+          "nama": "Line Tap Connector",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "8",
+          "nama": "Dead End Clamp/Preformed Term + Thimble",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "9",
+          "nama": "Bolt & Nut M16x400 + Washer (Double Arm)",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "10",
+          "nama": "U Strap",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "11",
+          "nama": "Semi Cond. Preformed Side Tie",
+          "satuan": "Pos",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "12",
+          "nama": "-",
+          "satuan": "-",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "13",
+          "nama": "Preformed Top Tie 240/150/70/35",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "14",
+          "nama": "Ground Wire Clamp type B + bolt, Preformed, cousen",
+          "satuan": "Set",
+          "kuantitas": "1"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI TIANG PENCABANGAN (TEE-OFF POLE) DENGAN CUT OUT SWITCH TM-8C",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tumpu)",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "2",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tarik)",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "3",
+          "nama": "Bolt & Nut M16x400 + Washer (Double Arm)",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "4",
+          "nama": "Arm Tie Type 750 Pipe Ø 3/4\"",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "5",
+          "nama": "Arm Tie Band, Nut + Washer",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "6",
+          "nama": "Bolt & Nut M16x140 + Washer",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "7",
+          "nama": "Long Rod Insulator 20 KV",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "8",
+          "nama": "Dead end/Strain Clamp/Preformed Termination",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "9",
+          "nama": "Preformet Top Tie 150/70/35 Sqmm",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "10",
+          "nama": "Band Strap/Cross Arm Clevis / Susp. Eye",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "11",
+          "nama": "Line Tap/H Connector",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "12",
+          "nama": "Cut Out Switch 22KV/100A + Bracket",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "13",
+          "nama": "Fuse Link 100 A",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "14",
+          "nama": "Double Arm Band + Bolt & Nuts + Washer",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "15",
+          "nama": "20 KV Pin Post Insulator",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "16",
+          "nama": "Terminal Lug 150-Cu/Al",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "17",
+          "nama": "Semi Cond. Preformed Side Tie",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "18",
+          "nama": "Semi Cond. Preformed Top Tie",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "19",
+          "nama": "Ground Wire Clamp type C + bolt, Preformed, cousen",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "20",
+          "nama": "Wire Clip M.6",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI TIANG PENCABANGAN (TEE-OFF POLE) TANPA PERLUASAN TM-7",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "20 KV Pin Post Insulator",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "2",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tumpu)",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "3",
+          "nama": "Bolt & Nut M16x400 + Washer (Double Arm)",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "4",
+          "nama": "Arm Tie Type 750 Pipe Ø 3/4\"",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "5",
+          "nama": "Arm Tie Band, Nut, Washer",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "6",
+          "nama": "U Strap",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "7",
+          "nama": "Long Rod Insulator 20 KV",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "8",
+          "nama": "Line Tap Connector",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "9",
+          "nama": "Band Strap/Cross Arm Clevis / Susp. VEE.",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "10",
+          "nama": "Bolt & Nut M140 + Washer",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "11",
+          "nama": "Double Arm Band + Bolt & Nuts + Washer",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "12",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tarik)",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "13",
+          "nama": "Dead end/Strain Clamp/Preformed Termination",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "14",
+          "nama": "Semi Cond. Preformed Side Tie",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "15",
+          "nama": "Semi Cond. Preformed Top Tie",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "16",
+          "nama": "Preformet Top Tie 240/150/70/35 Sqmm",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "17",
+          "nama": "Ground Wire Clamp type C + bolt, Preformed, cousen",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "18",
+          "nama": "Bolt M 8 x 30",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG AKHIR (END POLE) UNTUK GARDU PORTAL TM-12",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "Long Rod Insulator 20 KV",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "2",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tarik)",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "3",
+          "nama": "Arm Tie Type 750 Pipe Ø 3/4\"",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "4",
+          "nama": "Bolt & Nut M 16x350/M16x400+ Washer (Double Arm)",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "5",
+          "nama": "U Strap",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "6",
+          "nama": "Cross Arm Clevis + Bolt & Nut M16x120 + Washer",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "7",
+          "nama": "Preformed Termination 22/35 mm u/ Ground Shield Wire",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "8",
+          "nama": "Thimble/cousen 22/35 mm",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "9",
+          "nama": "Ground Wire Clamp type A + bolt, Wire Clip",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "10",
+          "nama": "Ground Wire Clamp type B + bolt, Preformed, cousen",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "11",
+          "nama": "Bolt & Nut M 16 x 50 + Square washer",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "12",
+          "nama": "20 KV Pin Post Insulator",
+          "satuan": "Set",
+          "kuantitas": "6"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG AKHIR (END POLE) UNTUK GARDU PORTAL SEJAJAR TM-13",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "Cross Arm 2500 NP10 tebal min. 5,0 mm - Type Tarik",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "2",
+          "nama": "Long Rod Insulator 20 KV",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "3",
+          "nama": "Single Arm Band + Washer",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "4",
+          "nama": "Bolt & Nut M16x140 + Washer",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "5",
+          "nama": "U-Strap",
+          "satuan": "Pcs",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "6",
+          "nama": "Double Arm Band + Washer",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "7",
+          "nama": "Cross Arm Clevis",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "8",
+          "nama": "Ground Wire Clamp type B + bolt, Preformed, cousen",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "9",
+          "nama": "Preformed Termination 22/35 mm u/ Ground Shield Wire",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "10",
+          "nama": "Cross Arm NP 8, 2500-tebal 3,2 mm",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "11",
+          "nama": "Bolt & Nut M 16 x 50+ washer",
+          "satuan": "Set",
+          "kuantitas": "4"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG AKHIR (END POLE) UNTUK GARDU PORTAL SEJAJAR LURUS TM-14",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "Cross Arm 2500 NP10 tebal min. 5,0 mm - Type Tumpu",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "2",
+          "nama": "20 KV Pin Post Insulator",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "3",
+          "nama": "Single Arm Band + Washer",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "4",
+          "nama": "Ground Wire Clamp type B + bolt, Preformed, cousen",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "5",
+          "nama": "Preformed Termination 22/35 mm u/ Ground Shield Wire",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "6",
+          "nama": "Cross Arm NP 8,2500-tebal 3,2 mm",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "7",
+          "nama": "Live Line Connector 150-70 mm (LLC)",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "8",
+          "nama": "Semi Cond. Preformed Top Tie",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "9",
+          "nama": "-",
+          "satuan": "-",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "10",
+          "nama": "-",
+          "satuan": "-",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "11",
+          "nama": "-",
+          "satuan": "-",
+          "kuantitas": "-"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI SUTM VERTICAL TIANG PENUMPU (LINE POLE) TMV",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tumpu)",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "2",
+          "nama": "Arm Tie Type 750 Pipe 3/4\"",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "3",
+          "nama": "Bolt & Nut M16x350 + Washer (Double Arm)",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "4",
+          "nama": "Bolt & Nut M16x50 + Washer",
+          "satuan": "Set",
+          "kuantitas": "7"
+        },
+        {
+          "nomor": "5",
+          "nama": "20 KV Pin Post Insulator",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "6",
+          "nama": "Semi Cond. Preformed Side Tie",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "7",
+          "nama": "Single Guy Wire Band 6\"",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "8",
+          "nama": "Preformed Grip 70 mm",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "9",
+          "nama": "Ground Wire Clamp type A + Bolt, Wire Clip",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "10",
+          "nama": "Galvanized Steel Stranded 70 mm",
+          "satuan": "Mtr",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "11",
+          "nama": "Thimble/Cousen",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "12",
+          "nama": "Cross Arm Clevis",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "13",
+          "nama": "Cross Arm NP-10 tebal min 5,0 1400",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI SUTM VERTICAL TIANG PENEGANG (TENSION POLE) TMV-P",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tumpu)",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "2",
+          "nama": "Arm Tie Type 750 Pipe 3/4\"",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "3",
+          "nama": "Bolt & Nut M16x350+ Washer (Double Arm)",
+          "satuan": "Set",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "4",
+          "nama": "Strain Rod Insulator 20 kV + Strain Clamp 150-240 mm + Bolt & Nut M16x120",
+          "satuan": "Set",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "5",
+          "nama": "20 KV Pin Post Insulator",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "6",
+          "nama": "Semi Cond. Preformed Side Tie",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "7",
+          "nama": "Single Guy Wire Band 6\"",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "8",
+          "nama": "Preformed Grip 70 mm",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "9",
+          "nama": "Ground Wire Clamp type B + Bolt",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "10",
+          "nama": "Galvanized Steel Stranded 70 mm",
+          "satuan": "Mtr",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "11",
+          "nama": "Thimble/Cousen",
+          "satuan": "Pcs",
+          "kuantitas": "6"
+        },
+        {
+          "nomor": "12",
+          "nama": "Cross Arm Clevis",
+          "satuan": "Pcs",
+          "kuantitas": "4"
+        },
+        {
+          "nomor": "13",
+          "nama": "Cross Arm NP-10 tebal min 5,0 1400",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        }
+      ]
+    },
+
+    {
+      "Nama_Konstruksi": "KONSTRUKSI SUTM VERTICAL TIANG AKHIR (END POLE) TMVA",
+      "Detail_Material": [
+        {
+          "nomor": "1",
+          "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tumpu)",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "2",
+          "nama": "Arm Tie Type 750 Pipe Ø 3/4\"",
+          "satuan": "Pcs",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "3",
+          "nama": "Bolt & Nut M16x350+ Washer (Double Arm)",
+          "satuan": "Set",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "4",
+          "nama": "Strain Rod Insulator 20 kV + Strain Clamp 150-240 mm + Bolt & Nut M16x120",
+          "satuan": "Set",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "5",
+          "nama": "20 KV Pin Post Insulator",
+          "satuan": "Set",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "6",
+          "nama": "Preformed Side Tie Double",
+          "satuan": "Pcs",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "7",
+          "nama": "Single Guy Wire Band 6\"",
+          "satuan": "Pcs",
+          "kuantitas": "2"
+        },
+        {
+          "nomor": "8",
+          "nama": "Preformed Grip 70 mm",
+          "satuan": "Pcs",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "9",
+          "nama": "Ground Wire Clamp type B + Bolt",
+          "satuan": "Set",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "10",
+          "nama": "Galvanized Steel Stranded 70 mm",
+          "satuan": "Mtr",
+          "kuantitas": "-"
+        },
+        {
+          "nomor": "11",
+          "nama": "Thimble/Cousen",
+          "satuan": "Pcs",
+          "kuantitas": "1"
+        },
+        {
+          "nomor": "12",
+          "nama": "Cross Arm Clevis",
+          "satuan": "Pcs",
+          "kuantitas": "3"
+        },
+        {
+          "nomor": "13",
+          "nama": "Cross Arm NP-10 tebal min 5,0 1400",
+          "satuan": "Pcs",
+          "kuantitas": "-"
+        }
+      ]
+    }
+  ]
+}

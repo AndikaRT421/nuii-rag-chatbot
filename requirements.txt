@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+pydantic
+langchain-core
+langchain-ollama
+langchain
+langchain-community
+langchain-chroma
+sentence-transformers
+python-dotenv
+pdfplumber
+unstructured

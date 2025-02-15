@@ -1,0 +1,423 @@
+{
+    "Konten": [
+        {
+            "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG AWAL (RISER POLE)  TM-11.N",
+            "Detail_Material": [
+              {
+                "nomor": "1",
+                "nama": "Strain Rod Insulator 20 KV",
+                "satuan": "Pcs",
+                "kuantitas": "3"
+              },
+              {
+                "nomor": "2",
+                "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tarik)",
+                "satuan": "Pcs",
+                "kuantitas": "4"
+              },
+              {
+                "nomor": "3",
+                "nama": "Double Arm Bolt & Nut M16x400 + Washer",
+                "satuan": "Set",
+                "kuantitas": "4"
+              },
+              {
+                "nomor": "4",
+                "nama": "Arm Tie Type 750 Pipe diameter 3/4\"",
+                "satuan": "Pcs",
+                "kuantitas": "4"
+              },
+              {
+                "nomor": "5",
+                "nama": "Line Tap Connector",
+                "satuan": "Set",
+                "kuantitas": "3"
+              },
+              {
+                "nomor": "6",
+                "nama": "Double Arm Band + Nut & Washer",
+                "satuan": "Set",
+                "kuantitas": "2"
+              },
+              {
+                "nomor": "7",
+                "nama": "Arm Tie Band TM + Bolt & Nut",
+                "satuan": "Set",
+                "kuantitas": "2"
+              },
+              {
+                "nomor": "8",
+                "nama": "HV Band Strap/Cross Arm Clevis / Susp. VEE",
+                "satuan": "Set",
+                "kuantitas": "3"
+              },
+              {
+                "nomor": "9",
+                "nama": "Lightning Arrester 20 kV",
+                "satuan": "Set",
+                "kuantitas": "3"
+              },
+              {
+                "nomor": "10",
+                "nama": "Dead And/Strain Clamp/Preformet Term+Thible",
+                "satuan": "Set",
+                "kuantitas": "3"
+              },
+              {
+                "nomor": "11",
+                "nama": "Bolt & Nut M16 x 140+ Washer",
+                "satuan": "Pcs",
+                "kuantitas": "3"
+              },
+              {
+                "nomor": "12",
+                "nama": "NYA 25 mm2",
+                "satuan": "Meter",
+                "kuantitas": "4,5"
+              },
+              {
+                "nomor": "13",
+                "nama": "Cable Band + Nut & Washer",
+                "satuan": "Set",
+                "kuantitas": "3"
+              }
+            ]
+          },
+          {
+            "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG PENUMPU (LINE POLE) TM-1N",
+            "Detail_Material": [
+              {
+                "nomor": "1",
+                "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tumpu)",
+                "satuan": "Pcs",
+                "kuantitas": "1"
+              },
+              {
+                "nomor": "2",
+                "nama": "Arm Tie Type 750 Pipe diameter 3/4\"",
+                "satuan": "Pcs",
+                "kuantitas": "1"
+              },
+              {
+                "nomor": "3",
+                "nama": "Single Guy Wire Band - TM",
+                "satuan": "Set",
+                "kuantitas": "1"
+              },
+              {
+                "nomor": "4",
+                "nama": "Bolt & Nut M16x50 + Washer",
+                "satuan": "Set",
+                "kuantitas": "4"
+              },
+              {
+                "nomor": "5",
+                "nama": "20 KV Pin Post Insulator",
+                "satuan": "Set",
+                "kuantitas": "3"
+              },
+              {
+                "nomor": "6",
+                "nama": "Semi conductif Preformed Top Tie",
+                "satuan": "Set",
+                "kuantitas": "3"
+              },
+              {
+                "nomor": "7",
+                "nama": "Arm Tie Band - TM",
+                "satuan": "Set",
+                "kuantitas": "1"
+              }
+            ]
+          },
+          {
+            "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG AWAL (RISER POLE) EXSISTING LURUS TM-4X",
+            "Detail_Material": [
+              {
+                "nomor": "1",
+                "nama": "Dead End Clamp (Strain Clamp)",
+                "satuan": "Pcs",
+                "kuantitas": "3"
+              },
+              {
+                "nomor": "2",
+                "nama": "Cross Arm Clevis/Susp.VEE/Band Strap",
+                "satuan": "Pcs",
+                "kuantitas": "3"
+              },
+              {
+                "nomor": "3",
+                "nama": "20 KV Pin Post Insulator",
+                "satuan": "Pcs",
+                "kuantitas": "1"
+              },
+              {
+                "nomor": "4",
+                "nama": "Bolt & Nut M16x140",
+                "satuan": "Set",
+                "kuantitas": "3"
+              },
+              {
+                "nomor": "5",
+                "nama": "Line Tap Connector",
+                "satuan": "Set",
+                "kuantitas": "3"
+              },
+              {
+                "nomor": "6",
+                "nama": "Semi Cond. Preformed Side Tie",
+                "satuan": "Pcs",
+                "kuantitas": "1"
+              },
+              {
+                "nomor": "7",
+                "nama": "Semi Cond. Preformed Side Tie Double",
+                "satuan": "Pcs",
+                "kuantitas": "0"
+              },
+              {
+                "nomor": "8",
+                "nama": "Preformet Top Tie 240/150/70/35",
+                "satuan": "Pcs",
+                "kuantitas": "1"
+              },
+              {
+                "nomor": "9",
+                "nama": "Long Rod Insulator 20 KV",
+                "satuan": "Pcs",
+                "kuantitas": "3"
+              },
+              {
+                "nomor": "10",
+                "nama": "Wire Clip",
+                "satuan": "Pcs",
+                "kuantitas": "4"
+              },
+              {
+                "nomor": "11",
+                "nama": "Preformed, cousen",
+                "satuan": "Set",
+                "kuantitas": "1"
+              }
+            ]
+          },
+          {
+            "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG PENUMPU (LINE POLE) + LA TM-1A.N",
+            "Detail_Material": [
+              {
+                "nomor": "1",
+                "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tumpu)",
+                "satuan": "Pcs",
+                "kuantitas": "1"
+              },
+              {
+                "nomor": "2",
+                "nama": "Arm Tie Type 750 Pipe O 3/4",
+                "satuan": "Pcs",
+                "kuantitas": "1"
+              },
+              {
+                "nomor": "3",
+                "nama": "Single Guy Wire Band - TM",
+                "satuan": "Set",
+                "kuantitas": "1"
+              },
+              {
+                "nomor": "4",
+                "nama": "Bolt & Nut M16x50 + Washer",
+                "satuan": "Set",
+                "kuantitas": "4"
+              },
+              {
+                "nomor": "5",
+                "nama": "20 KV Pin Post Insulator",
+                "satuan": "Set",
+                "kuantitas": "3"
+              },
+              {
+                "nomor": "6",
+                "nama": "Semi conductif Preformed Top Tie",
+                "satuan": "Set",
+                "kuantitas": "3"
+              },
+              {
+                "nomor": "7",
+                "nama": "Arm Tie Band - TM",
+                "satuan": "Set",
+                "kuantitas": "1"
+              },
+              {
+                "nomor": "8",
+                "nama": "Lightning Arrester 20 kV-10 kA",
+                "satuan": "Set",
+                "kuantitas": "1"
+              },
+              {
+                "nomor": "9",
+                "nama": "Cross Arm NP-8 tebal min 3,2 2000 (type tumpu) + support",
+                "satuan": "Set",
+                "kuantitas": "1"
+              }
+            ]
+          },
+          {
+            "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG SUDUT KECIL (0° S/D 15°) + 1GW TM-1X",
+            "Detail_Material": [
+              {
+                "nomor": "1",
+                "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tumpu)",
+                "satuan": "Pcs",
+                "kuantitas": "1"
+              },
+              {
+                "nomor": "2",
+                "nama": "Arm Tie Type 750 Pipe Ø 3/4\"",
+                "satuan": "Pcs",
+                "kuantitas": "1"
+              },
+              {
+                "nomor": "3",
+                "nama": "Single Guy Wire Band - TM",
+                "satuan": "Set",
+                "kuantitas": "1"
+              },
+              {
+                "nomor": "4",
+                "nama": "Bolt & Nut M16x50 + Washer",
+                "satuan": "Set",
+                "kuantitas": "4"
+              },
+              {
+                "nomor": "5",
+                "nama": "20 KV Pin Post Insulator",
+                "satuan": "Set",
+                "kuantitas": "3"
+              },
+              {
+                "nomor": "6",
+                "nama": "Semi conductif Preformed Top Tie",
+                "satuan": "Set",
+                "kuantitas": "3"
+              },
+              {
+                "nomor": "7",
+                "nama": "Arm Tie Band - TM",
+                "satuan": "Set",
+                "kuantitas": "1"
+              }
+            ]
+          },
+          {
+            "Nama_Konstruksi": "KONSTRUKSI SUTM TIANG SUDUT SEDANG (15° S/D 30°) - MENGGUNAKAN PIN POST INSULATOR TM-2X",
+            "Detail_Material": [
+              {
+                "nomor": "1",
+                "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tumpu)",
+                "satuan": "Pcs",
+                "kuantitas": "2"
+              },
+              {
+                "nomor": "2",
+                "nama": "Arm Tie Type 750 Pipe O 3/4\"",
+                "satuan": "Pcs",
+                "kuantitas": "2"
+              },
+              {
+                "nomor": "3",
+                "nama": "Bolt & Nut M16x400 + Washer (Double Arm)",
+                "satuan": "Set",
+                "kuantitas": "1"
+              },
+              {
+                "nomor": "4",
+                "nama": "20 KV Pin (Pin Post) Insulator + Steel Pin",
+                "satuan": "Pcs",
+                "kuantitas": "6"
+              },
+              {
+                "nomor": "5",
+                "nama": "Semi Conductif Preformed Side Tie Double",
+                "satuan": "Set",
+                "kuantitas": "2"
+              },
+              {
+                "nomor": "6",
+                "nama": "Double Arm Band TM-9\"",
+                "satuan": "Set",
+                "kuantitas": "1"
+              }
+            ]
+          },
+          {
+            "Nama_Konstruksi": "KONSTRUKSI TIANG SUDUT SEDANG (15° S/D 30°) - MENGGUNAKAN STRAIN ROD INSULATOR TM-5X 1 Supp.",
+            "Detail_Material": [
+              {
+                "nomor": "1",
+                "nama": "20 KV Pin Post Insulator",
+                "satuan": "Pcs",
+                "kuantitas": "3"
+              },
+              {
+                "nomor": "2",
+                "nama": "Long Rod Insulator 20 KV",
+                "satuan": "Set",
+                "kuantitas": "6"
+              },
+              {
+                "nomor": "3",
+                "nama": "Cross Arm NP-10 tebal min 5,0 2000 (type tarik)",
+                "satuan": "Pcs",
+                "kuantitas": "2"
+              },
+              {
+                "nomor": "4",
+                "nama": "Arm Tie Type 750 (Pipe 3/4\")",
+                "satuan": "Set",
+                "kuantitas": "2"
+              },
+              {
+                "nomor": "5",
+                "nama": "Bolt & Nuts M16 x 140 + Washer",
+                "satuan": "Set",
+                "kuantitas": "6"
+              },
+              {
+                "nomor": "6",
+                "nama": "Susp.VEE/Cross Arm Clevis / Band Strap",
+                "satuan": "Pcs",
+                "kuantitas": "6"
+              },
+              {
+                "nomor": "7",
+                "nama": "Non Tension Joint",
+                "satuan": "Pcs",
+                "kuantitas": "3"
+              },
+              {
+                "nomor": "8",
+                "nama": "Dead End Clamp/Preformed Term + Thimble",
+                "satuan": "Pcs",
+                "kuantitas": "6"
+              },
+              {
+                "nomor": "9",
+                "nama": "Bolt & Nut M16x400+ Washer (Double Arm)",
+                "satuan": "Set",
+                "kuantitas": "2"
+              },
+              {
+                "nomor": "10",
+                "nama": "Double Arm Band TM 9\"",
+                "satuan": "Pcs",
+                "kuantitas": "1"
+              },
+              {
+                "nomor": "11",
+                "nama": "Semi Cond. Preformed Side Tie",
+                "satuan": "Pos",
+                "kuantitas": "3"
+              }
+            ]
+          }
+    ]
+}
