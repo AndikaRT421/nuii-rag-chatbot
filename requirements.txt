@@ -10,3 +10,4 @@ sentence-transformers
 python-dotenv
 pdfplumber
 unstructured
+python-multipart
