@@ -40,7 +40,7 @@ UNSTRUCTURED_API_URL="https://api.unstructured.io/general/v0/general"
 ### 5️⃣ Unduh Model LLM  
 Unduh **QWEN2.5 (7B)** menggunakan [Ollama](https://ollama.com/library/qwen2.5):  
 ```bash
-ollama download qwen2.5:7b
+ollama pull qwen2.5:7b
 ```
 
 ### 6️⃣ Jalankan Aplikasi  
