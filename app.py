@@ -10,16 +10,18 @@ from langchain_community.document_loaders import PDFPlumberLoader
 from langchain_community.document_loaders import JSONLoader
 from langchain_chroma import Chroma
 from sentence_transformers import CrossEncoder
+from sentence_transformers import SentenceTransformer, util
 from langchain_community.document_loaders import UnstructuredExcelLoader
 import os
 from dotenv import load_dotenv
 
 load_dotenv()
-
 os.environ["LANGCHAIN_TRACING_V2"] = os.getenv("LANGCHAIN_TRACING_V2")
 os.environ["LANGCHAIN_ENDPOINT"] = os.getenv("LANGCHAIN_ENDPOINT")
 os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
 os.environ["LANGCHAIN_PROJECT"] = os.getenv("LANGCHAIN_PROJECT")
+os.environ["UNSTRUCTURED_API_KEY"] = os.getenv("UNSTRUCTURED_API_KEY")
+os.environ["UNSTRUCTURED_API_URL"] = os.getenv("UNSTRUCTURED_API_URL")
 
 app = FastAPI()
 app.add_middleware(
@@ -29,10 +31,12 @@ app.add_middleware(
     allow_headers=["*"],
 )
 folder_path = "db"
+images_folder = "images/"
 
 cross_encoder = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-12-v2")
-llm = OllamaLLM(model="qwen2.5:7b")
 fast_embedding = OllamaEmbeddings(model='nomic-embed-text')
+llm = OllamaLLM(model="qwen2.5:7b")
+model_st = SentenceTransformer('all-MiniLM-L6-v2')
 text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=2000, chunk_overlap=300, length_function=len, is_separator_regex=False
 )
@@ -49,50 +53,24 @@ raw_prompt = ChatPromptTemplate.from_template("""
     Jawaban:
 """)
 
-raw_prompt_summary = ChatPromptTemplate.from_template("""
-    Ekstrak kata kunci dari query berikut dan carilah 1 file gambar yang paling sesuai dengan kata kunci tersebut. 
-    CUKUP JAWAB KATA KUNCINYA SAJA!!!
-    Jika tidak ada, abaikan saja.:
-    Query: "{query}"
-    list gambar: {list_gambar}
-    Nama File gambar yang paling sesuai:
-""")
-
-def write_list(folder_path: str, list_path: str):
-    with open(list_path, "w") as f:
-        for filename in os.listdir(folder_path):
-            name, ext = os.path.splitext(filename)
-            if ext.lower() in [".jpg", ".jpeg", ".png"]:
-                f.write(name + "\n")
-
-def search_image(folder_path: str, query: str, list_path: str):
-    print("List Path:", list_path)
-    if os.path.exists(list_path):
-        with open(list_path, "r") as f:
-            list_gambar = f.read().splitlines()
-    else:
-        list_gambar = []
-    
-    keyword = raw_prompt_summary.format(query = query, list_gambar = list_gambar)
-    keyword = llm.invoke(keyword)
-    
-    if not keyword:
-        print("Tidak dapat menemukan kata kunci dari query.")
-        return None
-    
-    for filename in os.listdir(folder_path):
-        name, ext = os.path.splitext(filename)
-        keyword_words = keyword.lower().split()
-        name_lower = name.lower()
-        if all(word in name_lower for word in keyword_words):
-            print(f"Gambar untuk '{keyword}' ditemukan.")
-            return os.path.join(folder_path, filename)
-    
-    print(f"Gambar untuk '{keyword}' tidak ditemukan.")
-    return None
+def search_image(folder_path: str, query: str, k: int = 1):
+    image_files = [f for f in os.listdir(folder_path) if os.path.isfile(os.path.join(folder_path, f))]
+    image_embeddings = model_st.encode(image_files, convert_to_tensor=True)
+    query_embedding = model_st.encode(query, convert_to_tensor=True)
+    cosine_scores = util.cos_sim(query_embedding, image_embeddings)[0]
+    threshold = 0.5
+    topk = cosine_scores.topk(k)
+    best_matches = [
+        (image_files[idx.item()])
+        for idx, score in zip(topk.indices, topk.values)
+        if score.item() > threshold
+    ]
+    print("Best Matches:", best_matches)
+    return best_matches
 
 class AskPDFRequest(BaseModel):
     query: str
+    k_image: int = 1
 
 @app.post("/tanya")
 async def tanya(request: AskPDFRequest):
@@ -100,12 +78,19 @@ async def tanya(request: AskPDFRequest):
     
     try:
         query = request.query
+        k_image = request.k_image
         print("Original Query:", query)
         
         # Cari Gambar
-        write_list(folder_path="images/", list_path="images/list.txt")
-        image_path = search_image(folder_path="images/", query=query, list_path="images/list.txt")
-        
+        try:
+            image_path = search_image(images_folder, query, k_image)
+            print("Image Path:", image_path)
+        except Exception as image_error:
+            print("Error saat mencari gambar:", image_error)
+            raise JSONResponse(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                content={"error": f"Error saat mencari gambar: {image_error}"})
+
         print("Loading vector database...")
         vector_db = Chroma(persist_directory=folder_path, embedding_function=fast_embedding)
         
