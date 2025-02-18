@@ -1,3 +1,69 @@
+20 KV Pin (Pin Post) Insulator + Steel Pin
+20 KV Pin Post Insulator
+20 kV Post Insulator
+Aluminium Binding Wire3,2 mm
+Aluminium Tape 4,0 mm
+Arm Tie Band + Bolt & Nut M. 16x50
+Arm Tie Band Bolt + Nut M16
+Arm Tie Band TM + Nut
+Arm Tie band TM 9 +Nut
+Arm Tie Band, Nut + Washer
+Arm Tie Band, Nut M16 + Washer
+Arm Tie Band- TM
+Arm Tie Type 750 pipe 34
+Arm Tie Type 900 Pipe 34
+Band Strap Cross ArmClevis Susp.VEE
+Band StrapCross ArmClevisSusp.Eye
+Bolt & Nut M140 + Washer
+Bolt & Nut M16 x 140 + Washer
+Bolt & Nut M16x400 + Washer (Double Arm)
+Bolt & Nut M16x50 + Washer
+Bolt M8 x 30
+Cable Band + Nut & Washer 2
+Cable Band + Nut & Washer
+Copper Tube CableSchoen 150 mm
+Copper Tube CableSchoen
+Cross Arm 2000 NP 8 untuk dudukan arrester
+Cross Arm 2500 NP10 tebal min.5,0 mm - Tipe Tarik
+Cross Arm Clevis + Bolt & Nut M16x120 + Washer
+Cross Arm Clevis
+Cross Arm ClevisHVBand Strap
+Cross Arm NP 8- 2500-tebal 3,2 mm
+Cross Arm NP- 10 tebalmin 5,0 1400
+Cross Arm NP- 10 tebalmin 5,0 2000 (tumpu)
+Cross Arm NP- 10 tebalmin 5,0 2000 (typetumpu)
+Cross Arm NP- 8 tebalmin 3,2 2000 (typetumpu) + support
+Cross Arm NP-10 tebalmin 5,0 2000 (type tarik)
+Cross Arm NP-10 tebalmin 5,0 3000 (type tarik)
+Cross Arm NP-10 tebalmin 5,0 6000 (type tarik)
+Cross Arm NP-8- 2500 tebal 3,2
+Cross Arm NP-8- 6000 tebal 3,2
+Cross Arm Type- 2000(tumpu)
+Cut Out Switch 22 kV-100 A + Bracket
+Cut Out Switch 22kV +Fuse Link 100A
+Cut Out Switch22KV 100 A + Bracket +Fuse Link
+Cut Out Switch22kV 100A+Fuse8A+Bracket
+Dead AndStrainClampPreformetTerm+Thible
+Dead End Clamp (StrainClamp)
+Dead EndClamp PreformedTerm+Thimble
+Deadend Strain Clamp Preformed Termination
+Double Arm Band + Bold& Nuts + Washer
+Double Arm Band + Nut& Washer
+Double Arm Band TM +Nut
+Double Arm Band TM-9
+Double Arm Band TM
+Double Arm Bolt & NutM16x400 + Washer
+DS Outdoor 24 kV-630A- 16 kA- BIL 125kV
+Fuse Cut Out Switch 20kV- 100 kA
+Fuse Link 100 A
+Galvanized steel Stranded 70 mm
+Ground Wire Clamp typeA + Bolt, Wire clip
+Ground Wire Clamp typeB+Bolt, Performed,Cousen
+Ground Wire clamp typeC + bolt, Preformed,Cousen
+HV Band Strap
+HV Band StrapCrossArm ClevisSusp. VEE
+HV Dead End Clamp
+Jumper Wire 80 mmMV Insulated Conductor NYAF
 KONSTRUKSI SUTM TIANG AKHIR (END POE) UNTUK GARDU PORTAL SEJAJAR LURUS TM-14
 KONSTRUKSI SUTM TIANG AKHIR (END POLE) - (TANPA PERLUASAN) TM-3
 KONSTRUKSI SUTM TIANG AKHIR (END POLE) MENGGUNAKAN LIGHTNING ARRESTER (LA) TM-4A.N
@@ -53,3 +119,48 @@ KONSTRUKSI TIANG PENEGANG (TENSION POLE) TANPA PERLUASAN TM-6
 KONSTRUKSI TIANG PENYANGGA & TARIK EXSISTING DILENGKAPI CUT OUT SWITCH TM-8XC
 KONSTRUKSI TIANG SUDUT SEDANG (15 DERAJAT SD 30 DERAJAT)-MENGGUNAKAN STRAIN ROD INSULATOR TM-5 1 SUPP
 KONSTRUKSI TIANG SUDUT SEDANG (15° - 30°) - MENGGUNAKAN STRAIN ROD INSULATOR TM-5X 1 Supp
+Lightning Arrester 10 kA - 24 kV
+Lightning Arrester 10A-24kV
+Lightning Arrester 20 kV - 10 kA
+Lightning Arrester 20 kV
+Lightning Arrester
+Line Tap Connector  HHConnector
+Line Tap Connector 150 70 35
+Line Tap Connector
+Line Tap H Connector
+Line Top Connector240 150 70 35
+Live Line Connector 150 - 70 mm (LLC)
+Long Rod Insulator 20KV
+Mounting Bracket ForArrester
+Non Tension Joint
+NYA 25 mm2
+NYA 25mm2
+Performed, Cousen
+Pipe Band + Nut &Washer
+Prefomet Top Tie150 70 35
+Preformed Grip 70 mm
+Preformed Termination 22 35 mm u GroundShield Wire
+Preformet Top Tie240 150 70 35 Sqmm
+Semi Cod. PreformedSide Tie Double
+Semi Cond. Top Tie
+Semi Cond.PreformedSide Tie Double
+Semi Cond.PreformedSide Tie
+Semi conductif Preformed Top Tie
+Single Arm Band + Bolt& Nuts + Washer
+Single Arm Band + Nut& Washer
+Single Arm Band TM-8
+Single Guy Wire Band 6
+Single Guy Wire Band-TM
+Strain Clamp
+Strain ClampPerformetTerm
+Strain Rod Insulator 20kV + Strain Clamp 150-240 mm + Bolt & NutM16x120
+Strain Rod Insulator 20KV
+Susp. VEE Cross ArmClevis Band Strap
+Terminal Lug 150 Cu-Al- 2 hole
+Terminal Lug 150-Cu Al
+Terminal Lug CuAl
+Thimble cousen 22  35mm
+U Strap
+Wire Clip M.8
+Wire Clip M6
+Wire Clip
