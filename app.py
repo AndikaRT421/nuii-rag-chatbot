@@ -1,4 +1,4 @@
-from fastapi import FastAPI, File, UploadFile, status
+from fastapi import FastAPI, File, UploadFile, status, Form
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
@@ -15,13 +15,19 @@ from langchain_community.document_loaders import UnstructuredExcelLoader
 import os
 from dotenv import load_dotenv
 
+from langchain_qdrant import QdrantVectorStore
+from qdrant_client import QdrantClient
+from qdrant_client.http.models import Distance, VectorParams
+
 load_dotenv()
-os.environ["LANGCHAIN_TRACING_V2"] = os.getenv("LANGCHAIN_TRACING_V2")
-os.environ["LANGCHAIN_ENDPOINT"] = os.getenv("LANGCHAIN_ENDPOINT")
-os.environ["LANGCHAIN_API_KEY"] = os.getenv("LANGCHAIN_API_KEY")
-os.environ["LANGCHAIN_PROJECT"] = os.getenv("LANGCHAIN_PROJECT")
+os.environ["LANGSMITH_TRACING"] = os.getenv("LANGSMITH_TRACING")
+os.environ["LANGSMITH_ENDPOINT"] = os.getenv("LANGSMITH_ENDPOINT")
+os.environ["LANGSMITH_API_KEY"] = os.getenv("LANGSMITH_API_KEY")
+os.environ["LANGSMITH_PROJECT"] = os.getenv("LANGSMITH_PROJECT")
 os.environ["UNSTRUCTURED_API_KEY"] = os.getenv("UNSTRUCTURED_API_KEY")
 os.environ["UNSTRUCTURED_API_URL"] = os.getenv("UNSTRUCTURED_API_URL")
+QDRANT_ENDPOINT = os.getenv("QDRANT_ENDPOINT")
+QDRANT_APIKEY = os.getenv("QDRANT_APIKEY")
 
 app = FastAPI()
 app.add_middleware(
@@ -32,14 +38,49 @@ app.add_middleware(
 )
 folder_path = "db"
 images_folder = "images/"
+collections = ['jaringan_collection', 'niaga_collection', 'sdm_collection', 'skki_skko_collection']
 
 cross_encoder = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-12-v2")
 fast_embedding = OllamaEmbeddings(model='nomic-embed-text')
-llm = OllamaLLM(model="qwen2.5:7b")
+llm = OllamaLLM(model="qwen2.5:1.5b")
 model_st = SentenceTransformer('all-MiniLM-L6-v2')
 text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=2000, chunk_overlap=300, length_function=len, is_separator_regex=False
 )
+
+client = QdrantClient(QDRANT_ENDPOINT, api_key=QDRANT_APIKEY)
+
+def init_collections():
+    print("Checking and initializing Qdrant collections...")
+    embedding_dimension = 768
+    
+    for collection_name in collections:
+        try:
+            collection_info = client.get_collection(collection_name=collection_name)
+            print(f"Collection '{collection_name}' already exists.")
+        except Exception:
+            print(f"Creating collection '{collection_name}'...")
+            client.create_collection(
+                collection_name=collection_name,
+                vectors_config=VectorParams(
+                    size=embedding_dimension, 
+                    distance=Distance.COSINE
+                )
+            )
+            print(f"Collection '{collection_name}' created successfully.")
+
+init_collections()
+
+vector_stores = {
+    collection_name: QdrantVectorStore(
+        client=client,
+        collection_name=collection_name,
+        embedding=fast_embedding,
+    ) for collection_name in collections
+}
+
+# default
+vector_store = vector_stores['jaringan_collection']
 
 raw_prompt = ChatPromptTemplate.from_template("""
     Anda adalah asisten virtual bernama NUII yang memberikan jawaban langsung dan jelas terkait konstruksi jaringan PLN.  
@@ -91,21 +132,35 @@ async def tanya(request: AskPDFRequest):
                 status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
                 content={"error": f"Error saat mencari gambar: {image_error}"})
 
-        print("Loading vector database...")
-        vector_db = Chroma(persist_directory=folder_path, embedding_function=fast_embedding)
+        # print("Loading vector database...")
+        # vector_db = Chroma(persist_directory=folder_path, embedding_function=fast_embedding)
         
-        print("Creating Chain...")
-        retriever = vector_db.as_retriever(
-            search_type="mmr",
-            search_kwargs={"k": 20, "lambda_mult": 0.2},
-        )
-        retrieved_docs = retriever.invoke(query)
-        print(f"Retrieved {len(retrieved_docs)} documents.")
+        # print("Creating Chain...")
+        # retriever = vector_store.as_retriever(
+        #     search_type="mmr",
+        #     search_kwargs={"k": 20, "lambda_mult": 0.2},
+        # )
+        # retrieved_docs = retriever.invoke(query)
+        # print(f"Retrieved {len(retrieved_docs)} documents.")
 
-        query_doc_pairs = [(query, doc.page_content) for doc in retrieved_docs]
+        all_docs = []
+        for collection_name, store in vector_stores.items():
+            print(f"Searching in collection: {collection_name}")
+            retriever = store.as_retriever(
+                search_type="mmr",
+                search_kwargs={"k": 5, "lambda_mult": 0.2},
+            )
+            docs = retriever.invoke(query)
+            for doc in docs:
+                doc.metadata["collection"] = collection_name 
+            all_docs.extend(docs)
+        
+        print(f"Retrieved {len(all_docs)} documents from all collections")
+
+        query_doc_pairs = [(query, doc.page_content) for doc in all_docs]
         scores = cross_encoder.predict(query_doc_pairs)
         ranked_docs = sorted(
-            zip(retrieved_docs, scores),
+            zip(all_docs, scores),
             key=lambda x: x[1],  
             reverse=True        
         )
@@ -119,7 +174,9 @@ async def tanya(request: AskPDFRequest):
             "message": "Query processed successfully",
             "image": image_path, 
             "answer": result,
-            "context": context
+            "context": context,
+            "sources": [{"content": doc.page_content, "collection": doc.metadata.get("collection", "unknown")} 
+                       for doc in top_k_docs]
         }
     except Exception as e:
         return JSONResponse(
@@ -127,12 +184,21 @@ async def tanya(request: AskPDFRequest):
             content={'error': str(e)}
         )
 
+class UploadRequest(BaseModel):
+    collection_name: str = "jaringan_collection"  # Default collection
+
 @app.post("/upload")
-async def upload(file: UploadFile = File(...)):
-    print("Request /upload received")
+async def upload(file: UploadFile = File(...), collection_name: str = "jaringan_collection"):
+    print(f"Request /upload received for collection: {collection_name}")
     
     if not file:
         return JSONResponse(content={'error': 'No file part'}, status_code=400)
+    
+    if collection_name not in collections:
+        return JSONResponse(
+            content={'error': f'Invalid collection name. Choose from: {", ".join(collections)}'},
+            status_code=400
+        )
     
     try:            
         file_name = file.filename
@@ -156,11 +222,13 @@ async def upload(file: UploadFile = File(...)):
         chunks = text_splitter.split_documents(docs)
         print(f"Number of chunks: {len(chunks)}")
         
-        Chroma.from_documents(documents=chunks, embedding=fast_embedding, persist_directory=folder_path)
-            
+        # Chroma.from_documents(documents=chunks, embedding=fast_embedding, persist_directory=folder_path)
+        vector_stores[collection_name].add_documents(documents=chunks)
+
         return {
             "message": "File uploaded successfully", 
             "filename": file_name, 
+            "collection": collection_name,
             "documents": len(docs), 
             "chunks": len(chunks)
         }
