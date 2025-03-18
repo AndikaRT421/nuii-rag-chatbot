@@ -18,6 +18,8 @@ from dotenv import load_dotenv
 from langchain_qdrant import QdrantVectorStore
 from qdrant_client import QdrantClient
 from qdrant_client.http.models import Distance, VectorParams
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
+from langchain_ollama import OllamaEmbeddings
 
 load_dotenv()
 os.environ["LANGSMITH_TRACING"] = os.getenv("LANGSMITH_TRACING")
@@ -27,7 +29,7 @@ os.environ["LANGSMITH_PROJECT"] = os.getenv("LANGSMITH_PROJECT")
 os.environ["UNSTRUCTURED_API_KEY"] = os.getenv("UNSTRUCTURED_API_KEY")
 os.environ["UNSTRUCTURED_API_URL"] = os.getenv("UNSTRUCTURED_API_URL")
 QDRANT_ENDPOINT = os.getenv("QDRANT_ENDPOINT")
-QDRANT_APIKEY = os.getenv("QDRANT_APIKEY")
+QDRANT_API_KEY = os.getenv("QDRANT_API_KEY")
 
 app = FastAPI()
 app.add_middleware(
@@ -41,18 +43,23 @@ images_folder = "images/"
 collections = ['jaringan_collection', 'niaga_collection', 'sdm_collection', 'skki_skko_collection']
 
 cross_encoder = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-12-v2")
-fast_embedding = OllamaEmbeddings(model='nomic-embed-text')
-llm = OllamaLLM(model="qwen2.5:1.5b")
+# fast_embedding = OllamaEmbeddings(model='nomic-embed-text')
+# llm = OllamaLLM(model="qwen2.5:1.5b")
+
+fast_embedding = OpenAIEmbeddings(model="text-embedding-ada-002")
+llm = ChatOpenAI(model="gpt-3.5-turbo")
+
 model_st = SentenceTransformer('all-MiniLM-L6-v2')
 text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=2000, chunk_overlap=300, length_function=len, is_separator_regex=False
 )
 
-client = QdrantClient(QDRANT_ENDPOINT, api_key=QDRANT_APIKEY)
+client = QdrantClient(QDRANT_ENDPOINT, api_key=QDRANT_API_KEY)
 
 def init_collections():
     print("Checking and initializing Qdrant collections...")
-    embedding_dimension = 768
+    # Change this value to match OpenAI's embedding dimension
+    embedding_dimension = 1536  # OpenAI's text-embedding-ada-002 uses 1536 dimensions
     
     for collection_name in collections:
         try:
@@ -69,7 +76,11 @@ def init_collections():
             )
             print(f"Collection '{collection_name}' created successfully.")
 
-init_collections()
+try:
+    init_collections()
+    print("Collections initialized successfully")
+except Exception as e:
+    print(f"Error initializing collections: {e}")
 
 vector_stores = {
     collection_name: QdrantVectorStore(
