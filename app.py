@@ -18,7 +18,6 @@ from dotenv import load_dotenv
 from langchain_qdrant import QdrantVectorStore
 from qdrant_client import QdrantClient
 from qdrant_client.http.models import Distance, VectorParams
-from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from langchain_ollama import OllamaEmbeddings
 
 load_dotenv()
@@ -43,11 +42,8 @@ images_folder = "images/"
 collections = ['jaringan_collection', 'niaga_collection', 'sdm_collection', 'skki_skko_collection']
 
 cross_encoder = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-12-v2")
-# fast_embedding = OllamaEmbeddings(model='nomic-embed-text')
-# llm = OllamaLLM(model="qwen2.5:1.5b")
-
-fast_embedding = OpenAIEmbeddings(model="text-embedding-ada-002")
-llm = ChatOpenAI(model="gpt-3.5-turbo")
+fast_embedding = OllamaEmbeddings(model='nomic-embed-text')
+llm = OllamaLLM(model="qwen2.5:1.5b")
 
 model_st = SentenceTransformer('all-MiniLM-L6-v2')
 text_splitter = RecursiveCharacterTextSplitter(
@@ -58,8 +54,7 @@ client = QdrantClient(QDRANT_ENDPOINT, api_key=QDRANT_API_KEY)
 
 def init_collections():
     print("Checking and initializing Qdrant collections...")
-    # Change this value to match OpenAI's embedding dimension
-    embedding_dimension = 1536  # OpenAI's text-embedding-ada-002 uses 1536 dimensions
+    embedding_dimension = 768  
     
     for collection_name in collections:
         try:
