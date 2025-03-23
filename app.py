@@ -21,12 +21,12 @@ from qdrant_client.http.models import Distance, VectorParams
 from langchain_ollama import OllamaEmbeddings
 
 load_dotenv()
-os.environ["LANGSMITH_TRACING"] = os.getenv("LANGSMITH_TRACING")
-os.environ["LANGSMITH_ENDPOINT"] = os.getenv("LANGSMITH_ENDPOINT")
-os.environ["LANGSMITH_API_KEY"] = os.getenv("LANGSMITH_API_KEY")
-os.environ["LANGSMITH_PROJECT"] = os.getenv("LANGSMITH_PROJECT")
-os.environ["UNSTRUCTURED_API_KEY"] = os.getenv("UNSTRUCTURED_API_KEY")
-os.environ["UNSTRUCTURED_API_URL"] = os.getenv("UNSTRUCTURED_API_URL")
+LANGSMITH_TRACING = os.getenv("LANGSMITH_TRACING")
+LANGSMITH_ENDPOINT = os.getenv("LANGSMITH_ENDPOINT")
+LANGSMITH_API_KEY = os.getenv("LANGSMITH_API_KEY")
+LANGSMITH_PROJECT = os.getenv("LANGSMITH_PROJECT")
+UNSTRUCTURED_API_KEY = os.getenv("UNSTRUCTURED_API_KEY")
+UNSTRUCTURED_API_URL = os.getenv("UNSTRUCTURED_API_URL")
 QDRANT_ENDPOINT = os.getenv("QDRANT_ENDPOINT")
 QDRANT_API_KEY = os.getenv("QDRANT_API_KEY")
 
@@ -43,7 +43,7 @@ collections = ['jaringan_collection', 'niaga_collection', 'sdm_collection', 'skk
 
 cross_encoder = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-12-v2")
 fast_embedding = OllamaEmbeddings(model='nomic-embed-text')
-llm = OllamaLLM(model="qwen2.5:1.5b")
+llm = OllamaLLM(model="qwen2.5:7b")
 
 model_st = SentenceTransformer('all-MiniLM-L6-v2')
 text_splitter = RecursiveCharacterTextSplitter(
