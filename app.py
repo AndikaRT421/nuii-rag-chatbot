@@ -16,7 +16,6 @@ import os
 from pathlib import Path
 from dotenv import load_dotenv
 import re
-from collections import defaultdict
 from typing import List, Tuple
 
 load_dotenv()
@@ -106,15 +105,39 @@ def search_image(folder_path: str, query: str, k: int = 1):
         if sc.item() > threshold
     ]
 
-def keyword_search(text_chunks: List[Tuple[str, str]], query: str, top_k: int = 5):
-    pattern = re.compile(re.escape(query), re.I)
-    scored = []
-    for content, fpath in text_chunks:
-        hits = len(pattern.findall(content))
-        if hits:
-            scored.append((hits, content, fpath))
-    scored.sort(key=lambda x: (-x[0], len(x[1])))
-    return [(c, f) for _, c, f in scored[:top_k]]
+def _normalize(text: str) -> str:
+    return re.sub(r"\s+", " ", text).lower().strip()
+
+def keyword_search(query: str,
+                   client: QdrantClient,
+                   colls: List[str],
+                   page_size: int = 10000,
+                   top_k: int = 10):
+    q_norm = _normalize(query)
+    hits = []
+
+    for col in colls:
+        offset = None
+        while True:
+            points, offset = client.scroll(
+                collection_name=col,
+                with_payload=True,
+                limit=page_size,
+                offset=offset
+            )
+            for p in points:
+                txt = p.payload.get("page_content", "") or p.payload.get("text", "")
+                if not txt:
+                    continue
+                txt_norm = _normalize(txt)
+                cnt = txt_norm.count(q_norm)
+                if cnt:
+                    hits.append((cnt, txt, p.payload.get("source", ""), col))
+            if offset is None:
+                break
+
+    hits.sort(key=lambda x: (-x[0], len(x[1])))
+    return hits[:top_k]
 
 class AskPDFRequest(BaseModel):
     query: str
@@ -131,26 +154,16 @@ async def tanya(request: AskPDFRequest):
 
         image_path = search_image(images_folder, query, k_image)
 
-        # step 0 - keyword search
-        raw_chunks = []
-        for store in vector_stores.values():
-            points = store.client.scroll(
-                collection_name=store.collection_name,
-                with_payload=True,
-                limit=10000
-            )[0]
-            for p in points:
-                raw_chunks.append(
-                    (p.payload.get("page_content", ""), p.payload.get("source", ""))
-                )
-        keyword_hits = keyword_search(raw_chunks, query, top_k=5)
+        # keyword exact match
+        keyword_hits = keyword_search(query, client, collections, top_k=10)
         keyword_docs = []
-        for text, path in keyword_hits:
+        for cnt, text, path, coll in keyword_hits:
             d = type("Doc", (), {})()
             d.page_content = text
-            d.metadata = {"source": path, "collection": "keyword"}
+            d.metadata = {"source": path, "collection": f"keyword:{coll}", "keyword_hits": cnt}
             keyword_docs.append(d)
 
+        # semantic search
         semantic_docs = []
         for col, store in vector_stores.items():
             retr = store.as_retriever(
@@ -196,7 +209,7 @@ async def tanya(request: AskPDFRequest):
 
         unique_files = list(dict.fromkeys(file_names))
         files_urls = [f"/uploads/{fn}" for fn in unique_files]
-        files_exact = list(dict.fromkeys([Path(p).name for _, p in keyword_hits]))
+        files_exact = list(dict.fromkeys([Path(src).name for _, _, src, _ in keyword_hits if src]))
 
         return {
             "message": "Query processed successfully",
