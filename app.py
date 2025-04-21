@@ -15,15 +15,16 @@ from qdrant_client.http.models import Distance, VectorParams
 import os
 from pathlib import Path
 from dotenv import load_dotenv
+import re
+from collections import defaultdict
+from typing import List, Tuple
 
 load_dotenv()
 
-# Environment
 QDRANT_ENDPOINT = os.getenv("QDRANT_ENDPOINT")
 QDRANT_API_KEY = os.getenv("QDRANT_API_KEY")
 RUNPOD_URL = os.getenv("RUNPOD_SERVER_URL")
 
-# FastAPI app
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
@@ -32,18 +33,15 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Direktori untuk simpan upload
 upload_dir = Path(__file__).parent / "upload_folder"
 upload_dir.mkdir(exist_ok=True)
 
-# Mount static untuk serve file
 app.mount(
     "/uploads",
     StaticFiles(directory=upload_dir),
     name="uploads"
 )
 
-# Config koleksi & folders
 folder_path = "db"
 images_folder = "images/"
 collections = [
@@ -53,17 +51,14 @@ collections = [
     "skki_skko_collection",
 ]
 
-# Inisialisasi model & tools
 cross_encoder = CrossEncoder("cross-encoder/ms-marco-MiniLM-L-12-v2")
 fast_embedding = OllamaEmbeddings(model="nomic-embed-text")
-llm = OllamaLLM(model="qwen2.5:7b")
-
+llm = OllamaLLM(model="qwen2.5:7b", temperature=0.2)
 model_st = SentenceTransformer("all-MiniLM-L6-v2")
 text_splitter = RecursiveCharacterTextSplitter(
     chunk_size=2000, chunk_overlap=300, length_function=len, is_separator_regex=False
 )
 
-# Qdrant client & koleksi
 client = QdrantClient(QDRANT_ENDPOINT, api_key=QDRANT_API_KEY)
 def init_collections():
     embedding_dim = 768
@@ -82,20 +77,19 @@ vector_stores = {
     for col in collections
 }
 
-# Prompt template
 raw_prompt = ChatPromptTemplate.from_template("""
-Anda adalah asisten virtual bernama NUII yang memberikan jawaban langsung dan jelas terkait konstruksi jaringan PLN.
+Anda adalah asisten virtual bernama 'AI ASSISTANT' yang memberikan jawaban langsung dan jelas terkait seputar PLN terutama.
 Gunakan informasi dalam Konteks sebagai acuan.
 Jawablah dengan Bahasa Indonesia yang baku dan langsung ke inti jawaban tanpa frasa pembuka seperti 'Berdasarkan konteks yang diberikan'.
 Jika user bertanya tentang hal umum, silakan jawab sesuai kemampuan Anda serta sertakan sumber yang Anda ketahui.
-Jika user juga bertanya tentang hal yang diluar konteks konstruksi jaringan PLN dan PLN, silakan jawab dengan bijak dan tidak perlu memberikan jawaban terkait konstruksi jaringan PLN.
+Jika user juga bertanya tentang hal yang diluar konteks PLN, silakan jawab dengan bijak dan tidak perlu memberikan jawaban terkait PLN.
+Jika jawaban Anda diambil dari dokumen tertentu, sebutkan nama file di akhir kalimat dengan format (File: <nama_file>).
 
 Pertanyaan: {input}
 Konteks: {context}
 Jawaban:
 """)
 
-# Helper image search
 def search_image(folder_path: str, query: str, k: int = 1):
     files = [
         f for f in os.listdir(folder_path)
@@ -112,7 +106,16 @@ def search_image(folder_path: str, query: str, k: int = 1):
         if sc.item() > threshold
     ]
 
-# Request & upload schemas
+def keyword_search(text_chunks: List[Tuple[str, str]], query: str, top_k: int = 5):
+    pattern = re.compile(re.escape(query), re.I)
+    scored = []
+    for content, fpath in text_chunks:
+        hits = len(pattern.findall(content))
+        if hits:
+            scored.append((hits, content, fpath))
+    scored.sort(key=lambda x: (-x[0], len(x[1])))
+    return [(c, f) for _, c, f in scored[:top_k]]
+
 class AskPDFRequest(BaseModel):
     query: str
     k_image: int = 1
@@ -120,18 +123,35 @@ class AskPDFRequest(BaseModel):
 class UploadRequest(BaseModel):
     collection_name: str = "jaringan_collection"
 
-# Endpoint /tanya
 @app.post("/tanya")
 async def tanya(request: AskPDFRequest):
     try:
-        query = request.query
+        query = request.query.strip()
         k_image = request.k_image
 
-        # 1. Cari gambar
         image_path = search_image(images_folder, query, k_image)
 
-        # 2. Retrieve dokumen dari semua koleksi
-        all_docs = []
+        # step 0 - keyword search
+        raw_chunks = []
+        for store in vector_stores.values():
+            points = store.client.scroll(
+                collection_name=store.collection_name,
+                with_payload=True,
+                limit=10000
+            )[0]
+            for p in points:
+                raw_chunks.append(
+                    (p.payload.get("page_content", ""), p.payload.get("source", ""))
+                )
+        keyword_hits = keyword_search(raw_chunks, query, top_k=5)
+        keyword_docs = []
+        for text, path in keyword_hits:
+            d = type("Doc", (), {})()
+            d.page_content = text
+            d.metadata = {"source": path, "collection": "keyword"}
+            keyword_docs.append(d)
+
+        semantic_docs = []
         for col, store in vector_stores.items():
             retr = store.as_retriever(
                 search_type="mmr",
@@ -140,28 +160,33 @@ async def tanya(request: AskPDFRequest):
             docs = retr.invoke(query)
             for d in docs:
                 d.metadata["collection"] = col
-            all_docs.extend(docs)
+            semantic_docs.extend(docs)
 
-        # 3. Rank dengan cross-encoder
+        all_docs = keyword_docs + semantic_docs
         pairs = [(query, d.page_content) for d in all_docs]
         scores = cross_encoder.predict(pairs)
         ranked = sorted(zip(all_docs, scores), key=lambda x: x[1], reverse=True)
-        top_k_docs = [d for d, _ in ranked[:3]]
 
-        # 4. Format context & prompt
+        top_k_docs = []
+        seen = set()
+        for d, s in ranked:
+            fid = d.metadata.get("source", "") + str(hash(d.page_content))
+            if fid not in seen:
+                seen.add(fid)
+                top_k_docs.append(d)
+            if len(top_k_docs) >= 3:
+                break
+
         context = "\n\n".join(d.page_content for d in top_k_docs)
         prompt = raw_prompt.format(input=query, context=context)
         result = llm.invoke(prompt)
 
-        # 5. Siapkan sources + files
         out_sources = []
         file_names = []
         for doc in top_k_docs:
-            # metadata["source"] harus berisi path file asal
             src_path = doc.metadata.get("source", "")
             fname = Path(src_path).name or "unknown.txt"
             file_names.append(fname)
-
             out_sources.append({
                 "content": doc.page_content,
                 "collection": doc.metadata.get("collection", "unknown"),
@@ -169,9 +194,9 @@ async def tanya(request: AskPDFRequest):
                 "fileUrl": f"/uploads/{fname}"
             })
 
-        # dedupe file URLs
         unique_files = list(dict.fromkeys(file_names))
         files_urls = [f"/uploads/{fn}" for fn in unique_files]
+        files_exact = list(dict.fromkeys([Path(p).name for _, p in keyword_hits]))
 
         return {
             "message": "Query processed successfully",
@@ -179,7 +204,8 @@ async def tanya(request: AskPDFRequest):
             "answer": result,
             "context": context,
             "sources": out_sources,
-            "files": files_urls
+            "files": files_urls,
+            "files_exact": [f"/uploads/{f}" for f in files_exact]
         }
     except Exception as e:
         return JSONResponse(
@@ -187,7 +213,6 @@ async def tanya(request: AskPDFRequest):
             content={"error": str(e)}
         )
 
-# Endpoint /upload
 @app.post("/upload")
 async def upload(
     file: UploadFile = File(...),
@@ -205,7 +230,6 @@ async def upload(
         contents = await file.read()
         save_path.write_bytes(contents)
 
-        # loader sesuai extension
         if file_name.endswith(".pdf"):
             loader = PDFPlumberLoader(str(save_path))
         elif file_name.endswith(".json"):
@@ -214,10 +238,13 @@ async def upload(
                 jq_schema=".Konten[]",
                 text_content=False
             )
-        else:  # .xlsx
+        else:
             loader = UnstructuredExcelLoader(str(save_path), mode="elements")
 
         docs = loader.load_and_split()
+        for doc in docs:
+            doc.metadata.setdefault("source", str(save_path))
+
         chunks = text_splitter.split_documents(docs)
         vector_stores[collection_name].add_documents(documents=chunks)
 
@@ -234,7 +261,6 @@ async def upload(
             content={"error": str(e)}
         )
 
-# Run server
 def start():
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=11436)
